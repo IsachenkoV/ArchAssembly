@@ -1,0 +1,284 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <set>
+#include <map>
+#include <cmath>
+
+using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+
+#define mp make_pair
+#define mt(a, b, c) mp(a, mp(b, c))
+typedef pair <string, ll> str;
+
+vector < str > dict;
+string s;
+
+struct Code {
+	int q, r;
+	bool d;
+
+	Code()
+	{
+		q = r = 0;
+		d = false;
+	}
+
+	Code(int _q, int _r, bool _d) : q(_q), r(_r), d(_d)
+	{
+	}
+};
+vector < Code > word_concat;
+const int MAXLEN = 100500;
+const int p = 31;
+
+bool letters[30];
+ll h[MAXLEN], pows[MAXLEN];
+
+vector < string > ans;
+vector < string > real_ans;
+
+inline void init_ans()
+{
+	for (int i = 0; i < 30; i++)
+	{
+		if (letters[i])
+		{
+			char x = 'a' + i;
+			string t = "";
+			t.push_back(x);
+			ans.push_back(t);
+		}
+	}
+}
+
+void stupid_solution()
+{
+	int sz = s.size();
+	for (int i = 0; i < (1 << sz); i++)
+	{
+		ans.clear();
+		init_ans();
+		int cur_pos = 0;
+		bool bad = false;
+		while (cur_pos < sz)
+		{
+			string temp = "";
+			while (cur_pos < sz && (i & (1 << cur_pos)))
+			{
+				temp.push_back(s[cur_pos]);
+				cur_pos++;
+			}
+			if (cur_pos < sz)
+			{
+				temp.push_back(s[cur_pos]);
+				cur_pos++;
+			}
+
+			bool flag = false;
+			for (int j = 0; j < ans.size(); j++)
+			{
+				if (ans[j].compare(temp) == 0)
+				{
+					flag = true;
+					ans.push_back(temp);
+					break;
+				}
+			}
+			if (!flag)
+			{
+				for (int k = 0; k < ans.size(); k++)
+				{
+					for (int j = 0; j < ans.size(); j++)
+					{
+						string t = ans[k] + ans[j];
+						if (t.compare(temp) == 0)
+						{
+							ans.push_back(temp);
+							flag = true;
+							break;
+						}
+					}
+					if (flag)
+						break;
+				}
+			}
+			if (!flag)
+			{
+				bad = true;
+				break;
+			}
+		}
+		if (!bad)
+		{
+			if (real_ans.size() == 0 || real_ans.size() > ans.size())
+			{
+				real_ans = vector < string >(ans);
+			}
+		}
+	}
+}
+
+const int CURMAXLEN = 12;
+
+int main()
+{
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	int good_ans = 0;
+	for (int i = 0; i < CURMAXLEN; i++)
+	{
+		s += "a";
+	}
+
+	while (true)
+	{
+		int ccc = CURMAXLEN - 1;
+		while (s[ccc] == 'c')
+		{
+			s[ccc] = 'a';
+			ccc--;
+		}
+		s[ccc] = (char)(s[ccc] + 1);
+
+		memset(letters, 0, sizeof(letters));
+		memset(pows, 0, sizeof(pows));
+		memset(h, 0, sizeof(h));
+
+		h[0] = s[0] - 'a' + 1;
+		pows[0] = 1;
+		int sz = min((int)s.size(), MAXLEN);
+		for (int i = 1; i < sz; i++)
+		{
+			pows[i] = pows[i - 1] * p;
+			h[i] = h[i - 1] + (s[i] - 'a' + 1) * pows[i];
+		}
+
+		dict.clear();
+		ans.clear();
+		word_concat.clear();
+		real_ans.clear();
+		// add all letters to dictionary
+		for (int i = 0; i < s.length(); i++)
+		{
+			if (!letters[s[i] - 'a'])
+			{
+				string temp = "";
+				temp += s[i];
+				dict.push_back(mp(temp, temp[0] - 'a' + 1));
+				letters[s[i] - 'a'] = true;
+			}
+		}
+
+		int cur_position = 0;
+		int all_len = s.length();
+		while (cur_position < all_len)
+		{
+			int cur_max_len = -1;
+			string max_len_str = "";
+			bool new_word = false;
+			ll cur_hash;
+			Code next_code;
+
+			for (int i = 0; i < dict.size(); i++)
+			{
+				str s1 = dict[i];
+				string temp = s1.first;
+				int temp_len = temp.size();
+
+				ll dh = h[cur_position + temp_len - 1];
+				if (cur_position > 0)
+					dh -= h[cur_position - 1];
+
+				if (s1.second*pows[cur_position] == dh)
+				{
+					if (temp_len > cur_max_len && (s.substr(cur_position, temp_len)).compare(temp) == 0)
+					{
+						cur_max_len = temp_len;
+						max_len_str = temp;
+						new_word = false;
+						next_code = Code(i, -1, false);
+					}
+				}
+
+				for (int j = 0; j < dict.size(); j++)
+				{
+					str s2 = dict[j];
+					string temp = s1.first + s2.first;
+					int temp_len = temp.size();
+					ll temp_hash = s1.second + (s2.second) * pows[s1.first.size()];
+
+					ll dh = h[cur_position + temp_len - 1];
+					if (cur_position > 0)
+						dh -= h[cur_position - 1];
+
+					if (temp_hash*pows[cur_position] == dh)
+					{
+						if (temp_len > cur_max_len && (s.substr(cur_position, temp_len)).compare(temp) == 0)
+						{
+							cur_hash = temp_hash;
+							cur_max_len = temp_len;
+							max_len_str = temp;
+							new_word = true;
+
+							int q = max(i, j), r = min(i, j);
+							bool x = (i != q);
+							next_code = Code(q, r, x);
+						}
+					}
+				}
+			}
+
+			if (new_word)
+				dict.push_back(mp(max_len_str, cur_hash));
+			word_concat.push_back(next_code);
+			cur_position += cur_max_len;
+		}
+
+		stupid_solution();
+
+		if (dict.size() > real_ans.size())
+		{
+			for (str s1 : dict)
+			{
+				cout << s1.first << "\n";
+			}
+			cout << word_concat.size() << "\n";
+
+			for (Code x : word_concat)
+			{
+				cout << x.q << " " << x.r << " " << x.d << "\n";
+			}
+
+			cout << "\nFUCK\n";
+			for (int i = 0; i < real_ans.size(); i++)
+			{
+				cout << real_ans[i] << "\n";
+			}
+		}
+		else
+		{
+			good_ans++;
+		}
+		bool ending = true;
+		for (int i = 0; i < CURMAXLEN; i++)
+		{
+			if (s[i] != 'c')
+			{
+				ending = false;
+			}
+		}
+		if (ending)
+			break;
+	}
+	cout << "good strings:" << good_ans << "\n";
+	return 0;
+}

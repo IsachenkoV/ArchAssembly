@@ -1,0 +1,3013 @@
+a
+b
+c
+aa
+baa
+ab
+ac
+aa
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+aa
+ba
+aaba
+caa
+a
+b
+c
+aa
+baa
+ab
+ac
+ba
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ba
+aaba
+cba
+a
+b
+c
+aa
+baa
+ac
+ba
+ba
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ba
+aac
+baba
+a
+b
+c
+aa
+baa
+ba
+ca
+ba
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ba
+aba
+caba
+a
+b
+c
+aa
+ba
+bc
+aba
+bc
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+ab
+abc
+ababc
+a
+b
+c
+aa
+ba
+bc
+abc
+ab
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ab
+abc
+abcab
+a
+b
+aa
+bb
+ab
+abb
+ab
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+a
+b
+a
+ab
+bab
+abbab
+a
+b
+aa
+bb
+abb
+ab
+ab
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+a
+ab
+bab
+babab
+a
+b
+c
+aa
+bc
+ab
+abc
+ab
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ab
+cab
+abcab
+a
+b
+c
+aa
+bc
+abc
+ab
+ab
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ab
+cab
+cabab
+a
+c
+b
+aa
+caa
+ab
+ca
+ca
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ca
+aab
+caca
+a
+c
+b
+aa
+caa
+ac
+ab
+aa
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+aa
+ca
+aaca
+baa
+a
+c
+b
+aa
+caa
+ac
+ab
+ca
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ca
+aaca
+bca
+a
+c
+b
+aa
+caa
+ca
+ba
+ca
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+aa
+ca
+aca
+baca
+a
+c
+b
+aa
+ca
+cb
+aca
+cb
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+ac
+acb
+acacb
+a
+c
+b
+aa
+ca
+cb
+acb
+ac
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ac
+acb
+acbac
+a
+c
+b
+aa
+cb
+ac
+acb
+ac
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ac
+bac
+acbac
+a
+c
+b
+aa
+cb
+acb
+ac
+ac
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+a
+ac
+bac
+bacac
+a
+c
+aa
+cc
+ac
+acc
+ac
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+a
+c
+a
+ac
+cac
+accac
+a
+c
+aa
+cc
+acc
+ac
+ac
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+c
+a
+ac
+cac
+cacac
+a
+b
+c
+ab
+aab
+aa
+cb
+aa
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ab
+aa
+baa
+cbaa
+a
+b
+c
+ab
+bab
+aa
+cb
+aa
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ab
+ba
+baa
+cbaa
+a
+b
+c
+ab
+bab
+ac
+ba
+ab
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+ab
+ba
+bac
+baab
+a
+b
+c
+ab
+bab
+ac
+bb
+ac
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ab
+ba
+bac
+bbac
+a
+b
+c
+ab
+bab
+ac
+cb
+ac
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ab
+ba
+bac
+cbac
+a
+b
+c
+ab
+bab
+ba
+cb
+ba
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+ab
+ba
+bba
+cbba
+a
+b
+c
+ab
+bb
+bc
+bbc
+bb
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+a
+bb
+bbc
+bbcbb
+a
+b
+c
+ab
+bc
+bb
+bbc
+bb
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+a
+bb
+cbb
+bbcbb
+a
+b
+c
+ab
+bc
+bbc
+bb
+bb
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+a
+bb
+cbb
+cbbbb
+a
+b
+c
+ab
+cab
+ca
+cb
+ca
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+ab
+ca
+bca
+cbca
+a
+b
+c
+ab
+cc
+bc
+bcc
+bc
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+bc
+cbc
+bccbc
+a
+b
+c
+ab
+cc
+bcc
+bc
+bc
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+bc
+cbc
+cbcbc
+a
+c
+b
+ac
+aac
+aa
+bc
+aa
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ac
+aa
+caa
+bcaa
+a
+c
+b
+ac
+bac
+ba
+bc
+ba
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+ac
+ba
+cba
+bcba
+a
+c
+b
+ac
+bb
+cbb
+cb
+cb
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+cb
+bcb
+bcbcb
+a
+c
+b
+ac
+bb
+cb
+cbb
+cb
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+a
+cb
+bcb
+cbbcb
+a
+c
+b
+ac
+cac
+aa
+bc
+aa
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ac
+ca
+caa
+bcaa
+a
+c
+b
+ac
+cac
+ab
+bc
+ab
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ac
+ca
+cab
+bcab
+a
+c
+b
+ac
+cac
+ab
+ca
+ac
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+ac
+ca
+cab
+caac
+a
+c
+b
+ac
+cac
+ab
+cc
+ab
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ac
+ca
+cab
+ccab
+a
+c
+b
+ac
+cac
+ca
+bc
+ca
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+ac
+ca
+cca
+bcca
+a
+c
+b
+ac
+cb
+ccb
+cc
+cc
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+a
+cc
+bcc
+bcccc
+a
+c
+b
+ac
+cb
+cc
+ccb
+cc
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+a
+cc
+bcc
+ccbcc
+a
+c
+b
+ac
+cc
+cb
+ccb
+cc
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+a
+cc
+ccb
+ccbcc
+b
+a
+c
+ba
+aa
+ac
+aac
+aa
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+b
+aa
+aac
+aacaa
+b
+a
+c
+ba
+aba
+ab
+ca
+ab
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+ba
+ab
+aab
+caab
+b
+a
+c
+ba
+aba
+bb
+ca
+bb
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ba
+ab
+abb
+cabb
+b
+a
+c
+ba
+aba
+bc
+aa
+bc
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ba
+ab
+abc
+aabc
+b
+a
+c
+ba
+aba
+bc
+ab
+ba
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+ba
+ab
+abc
+abba
+b
+a
+c
+ba
+aba
+bc
+ca
+bc
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ba
+ab
+abc
+cabc
+b
+a
+c
+ba
+ac
+aa
+aac
+aa
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+b
+aa
+caa
+aacaa
+b
+a
+c
+ba
+ac
+aac
+aa
+aa
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+b
+aa
+caa
+caaaa
+b
+a
+c
+ba
+bba
+bb
+ca
+bb
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ba
+bb
+abb
+cabb
+b
+a
+c
+ba
+cba
+cb
+ca
+cb
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+ba
+cb
+acb
+cacb
+b
+a
+c
+ba
+cc
+ac
+acc
+ac
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+ac
+cac
+accac
+b
+a
+c
+ba
+cc
+acc
+ac
+ac
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+ac
+cac
+cacac
+b
+a
+bb
+aa
+baa
+ba
+ba
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+b
+ba
+aba
+ababa
+b
+a
+bb
+aa
+ba
+baa
+ba
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+a
+b
+b
+ba
+aba
+baaba
+b
+a
+c
+bb
+ab
+ac
+bab
+ac
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+ba
+bac
+babac
+b
+a
+c
+bb
+ab
+ac
+bac
+ba
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+ba
+bac
+bacba
+b
+a
+c
+bb
+abb
+ab
+cb
+ab
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+ab
+bab
+cbab
+b
+a
+c
+bb
+abb
+ba
+bc
+ab
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+ab
+bbab
+cab
+b
+a
+c
+bb
+abb
+ba
+bc
+bb
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+bb
+ab
+bbab
+cbb
+b
+a
+c
+bb
+abb
+bc
+ab
+ab
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+ab
+bbc
+abab
+b
+a
+c
+bb
+ac
+ba
+bac
+ba
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+ba
+cba
+bacba
+b
+a
+c
+bb
+ac
+bac
+ba
+ba
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+ba
+cba
+cbaba
+b
+c
+a
+bb
+ca
+bca
+bc
+bc
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+bc
+abc
+abcbc
+b
+c
+a
+bb
+ca
+bc
+bca
+bc
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+bc
+abc
+bcabc
+b
+c
+a
+bb
+cbb
+ba
+cb
+cb
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+cb
+bba
+cbcb
+b
+c
+a
+bb
+cbb
+bc
+ba
+bb
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+bb
+cb
+bbcb
+abb
+b
+c
+a
+bb
+cbb
+bc
+ba
+cb
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+cb
+bbcb
+acb
+b
+c
+a
+bb
+cbb
+cb
+ab
+cb
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+bb
+cb
+bcb
+abcb
+b
+c
+a
+bb
+cb
+ca
+bca
+bc
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+b
+bc
+bca
+bcabc
+b
+c
+a
+bb
+cb
+ca
+bcb
+ca
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+bc
+bca
+bcbca
+b
+c
+bb
+cc
+bc
+bcc
+bc
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+b
+c
+b
+bc
+cbc
+bccbc
+b
+c
+bb
+cc
+bcc
+bc
+bc
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+b
+c
+b
+bc
+cbc
+cbcbc
+b
+c
+a
+bc
+aa
+caa
+ca
+ca
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+ca
+aca
+acaca
+b
+c
+a
+bc
+aa
+ca
+caa
+ca
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+b
+ca
+aca
+caaca
+b
+c
+a
+bc
+abc
+ab
+ac
+ab
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+bc
+ab
+cab
+acab
+b
+c
+a
+bc
+bbc
+bb
+ac
+bb
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+bc
+bb
+cbb
+acbb
+b
+c
+a
+bc
+ca
+cca
+cc
+cc
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+b
+cc
+acc
+acccc
+b
+c
+a
+bc
+ca
+cc
+cca
+cc
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+b
+cc
+acc
+ccacc
+b
+c
+a
+bc
+cbc
+ba
+ac
+ba
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+bc
+cb
+cba
+acba
+b
+c
+a
+bc
+cbc
+ba
+cb
+bc
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+bc
+cb
+cba
+cbbc
+b
+c
+a
+bc
+cbc
+ba
+cc
+ba
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+bc
+cb
+cba
+ccba
+b
+c
+a
+bc
+cbc
+bb
+ac
+bb
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+bc
+cb
+cbb
+acbb
+b
+c
+a
+bc
+cbc
+cb
+ac
+cb
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+bc
+cb
+ccb
+accb
+b
+c
+a
+bc
+cc
+ca
+cca
+cc
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+b
+cc
+cca
+ccacc
+c
+a
+b
+ca
+aa
+ab
+aab
+aa
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+c
+aa
+aab
+aabaa
+c
+a
+b
+ca
+ab
+aa
+aab
+aa
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+c
+aa
+baa
+aabaa
+c
+a
+b
+ca
+ab
+aab
+aa
+aa
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+c
+aa
+baa
+baaaa
+c
+a
+b
+ca
+aca
+ac
+ba
+ac
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+ca
+ac
+aac
+baac
+c
+a
+b
+ca
+aca
+cb
+aa
+cb
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ca
+ac
+acb
+aacb
+c
+a
+b
+ca
+aca
+cb
+ac
+ca
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+ca
+ac
+acb
+acca
+c
+a
+b
+ca
+aca
+cb
+ba
+cb
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+ca
+ac
+acb
+bacb
+c
+a
+b
+ca
+aca
+cc
+ba
+cc
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ca
+ac
+acc
+bacc
+c
+a
+b
+ca
+bb
+ab
+abb
+ab
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+ab
+bab
+abbab
+c
+a
+b
+ca
+bb
+abb
+ab
+ab
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+ab
+bab
+babab
+c
+a
+b
+ca
+bca
+bc
+ba
+bc
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+ca
+bc
+abc
+babc
+c
+a
+b
+ca
+cca
+cc
+ba
+cc
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+ca
+cc
+acc
+bacc
+c
+b
+a
+cb
+aa
+baa
+ba
+ba
+5
+1 0 1
+2 2 0
+4 1 1
+2 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+ba
+aba
+ababa
+c
+b
+a
+cb
+aa
+ba
+baa
+ba
+5
+1 0 1
+2 2 0
+2 1 1
+4 1 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+ba
+aba
+baaba
+c
+b
+a
+cb
+acb
+ac
+ab
+ac
+5
+1 0 1
+3 2 1
+2 0 0
+2 1 0
+2 0 0
+
+FUCK
+a
+b
+c
+cb
+ac
+bac
+abac
+c
+b
+a
+cb
+ba
+bba
+bb
+bb
+5
+1 0 1
+2 1 1
+4 1 1
+1 1 0
+1 1 0
+
+FUCK
+a
+b
+c
+c
+bb
+abb
+abbbb
+c
+b
+a
+cb
+ba
+bb
+bba
+bb
+5
+1 0 1
+2 1 1
+1 1 0
+4 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+c
+bb
+abb
+bbabb
+c
+b
+a
+cb
+bb
+ba
+bba
+bb
+5
+1 0 1
+1 1 0
+2 1 1
+5 1 1
+1 1 0
+
+FUCK
+a
+b
+c
+c
+bb
+bba
+bbabb
+c
+b
+a
+cb
+bcb
+bc
+ab
+bc
+5
+1 0 1
+3 1 1
+1 0 0
+2 1 0
+1 0 0
+
+FUCK
+a
+b
+c
+cb
+bc
+bbc
+abbc
+c
+b
+a
+cb
+bcb
+ca
+ab
+ca
+5
+1 0 1
+3 1 1
+2 0 1
+2 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+cb
+bc
+bca
+abca
+c
+b
+a
+cb
+bcb
+ca
+bb
+ca
+5
+1 0 1
+3 1 1
+2 0 1
+1 1 0
+2 0 1
+
+FUCK
+a
+b
+c
+cb
+bc
+bca
+bbca
+c
+b
+a
+cb
+bcb
+ca
+bc
+cb
+5
+1 0 1
+3 1 1
+2 0 1
+1 0 0
+1 0 1
+
+FUCK
+a
+b
+c
+cb
+bc
+bca
+bccb
+c
+b
+a
+cb
+bcb
+cc
+ab
+cc
+5
+1 0 1
+3 1 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+cb
+bc
+bcc
+abcc
+c
+b
+a
+cb
+ccb
+cc
+ab
+cc
+5
+1 0 1
+3 0 1
+0 0 0
+2 1 0
+0 0 0
+
+FUCK
+a
+b
+c
+cb
+cc
+bcc
+abcc
+c
+a
+cc
+aa
+caa
+ca
+ca
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+c
+c
+ca
+aca
+acaca
+c
+a
+cc
+aa
+ca
+caa
+ca
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+a
+c
+c
+ca
+aca
+caaca
+c
+a
+b
+cc
+ab
+cab
+ca
+ca
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+ca
+bca
+bcaca
+c
+a
+b
+cc
+ab
+ca
+cab
+ca
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+ca
+bca
+cabca
+c
+a
+b
+cc
+ac
+ab
+cab
+ca
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+ca
+cab
+cabca
+c
+a
+b
+cc
+ac
+ab
+cac
+ab
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+ca
+cab
+cacab
+c
+a
+b
+cc
+acc
+ac
+bc
+ac
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+ac
+cac
+bcac
+c
+a
+b
+cc
+acc
+ca
+cb
+ac
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+ac
+ccac
+bac
+c
+a
+b
+cc
+acc
+ca
+cb
+cc
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+cc
+ac
+ccac
+bcc
+c
+a
+b
+cc
+acc
+cb
+ac
+ac
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+ac
+ccb
+acac
+c
+b
+a
+cc
+ba
+cba
+cb
+cb
+5
+0 0 0
+2 1 1
+4 0 1
+1 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+cb
+acb
+acbcb
+c
+b
+a
+cc
+ba
+cb
+cba
+cb
+5
+0 0 0
+2 1 1
+1 0 1
+4 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+cb
+acb
+cbacb
+c
+b
+cc
+bb
+cbb
+cb
+cb
+5
+0 0 0
+1 1 0
+3 0 1
+1 0 1
+1 0 1
+
+FUCK
+b
+c
+c
+cb
+bcb
+bcbcb
+c
+b
+cc
+bb
+cb
+cbb
+cb
+5
+0 0 0
+1 1 0
+1 0 1
+3 0 1
+1 0 1
+
+FUCK
+b
+c
+c
+cb
+bcb
+cbbcb
+c
+b
+a
+cc
+bc
+ba
+cba
+cb
+5
+0 0 0
+1 0 0
+2 1 1
+5 0 1
+1 0 1
+
+FUCK
+a
+b
+c
+c
+cb
+cba
+cbacb
+c
+b
+a
+cc
+bc
+ba
+cbc
+ba
+5
+0 0 0
+1 0 0
+2 1 1
+4 0 1
+2 1 1
+
+FUCK
+a
+b
+c
+c
+cb
+cba
+cbcba
+c
+b
+a
+cc
+bcc
+bc
+ac
+bc
+5
+0 0 0
+3 1 1
+1 0 0
+2 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+bc
+cbc
+acbc
+c
+b
+a
+cc
+bcc
+ca
+bc
+bc
+5
+0 0 0
+3 1 1
+2 0 1
+1 0 0
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+bc
+cca
+bcbc
+c
+b
+a
+cc
+bcc
+cb
+ca
+bc
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+1 0 0
+
+FUCK
+a
+b
+c
+cc
+bc
+ccbc
+abc
+c
+b
+a
+cc
+bcc
+cb
+ca
+cc
+5
+0 0 0
+3 1 1
+1 0 1
+2 0 1
+0 0 0
+
+FUCK
+a
+b
+c
+cc
+bc
+ccbc
+acc
+good strings:177014
