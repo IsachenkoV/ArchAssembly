@@ -1,0 +1,43 @@
+﻿<Window x:Class="GUIdiploma.Views.HeuristicView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIdiploma.Views"
+        xmlns:cal="http://www.caliburnproject.org"
+        mc:Ignorable="d"
+        Title="HeuristicView" Height="350" Width="700">
+    <Grid>
+        
+        
+        <CheckBox Name ="DefaultProp" Grid.Column="0"  Content ="Использовать настройки по умолчанию" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="{Binding UseDefaultProps, UpdateSourceTrigger=PropertyChanged}"/>
+        <Grid IsEnabled="{Binding NotUseDefaultProps, UpdateSourceTrigger=PropertyChanged}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        
+            <Label x:Name="CodeLabel" Grid.Column="0" Content="Выбор алгоритма для построения сборки подслов:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,80,0,0"/>
+            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,110,0,0"/>
+            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,140,0,0"/>
+            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,170,0,0"/>
+            <RadioButton Name="AutoRButton" Grid.Column ="0" Content = "Автоматический выбор" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,200,0,0"/>
+
+            <CheckBox Name="AutoSubwordLen" Grid.Column="1" Content ="Автоматически определять длины выделяемых подслов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" />
+            <Label x:Name="SubwordMinLabel" Grid.Column="1" Content="Минимальная длина выделямых подслов:" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="SubwordMin" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,80,0,0" Width="50"/>
+            <Label x:Name="SubwordMaxLabel" Grid.Column="1" Content="Максимальная длина выделямых подслов:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="SubwordMax" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,110,0,0" Width="50"/>
+
+            <CheckBox Name="UseDicts" Grid.Column="1" Content ="Использовать построенные словари" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" />
+
+            <Label x:Name="SubwordChoiceLabel" Grid.Column="1" Content="Выбор подслов:" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="FirstRButton" Grid.Column ="1" Content = "Первое подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,210,0,0"/>
+            <RadioButton Name="AllRButton" Grid.Column ="1" Content = "Все подслова" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,240,0,0"/>
+            <RadioButton Name="RandWCRButton" Grid.Column ="1" Content = "Случайное подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,270,0,0"/>
+        </Grid>
+
+        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,34,14" Width="75" IsDefault="True" Grid.Column="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="GUIdiploma.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIdiploma"
+        xmlns:cal="http://www.caliburnproject.org"
+        mc:Ignorable="d"
+        Title="Архиватор на основе алгоритма сборки слова" Height="450" Width="600" WindowStartupLocation="CenterScreen"
+        Icon="assembly.ico">
+    <Grid>
+
+        <RadioButton x:Name="Encode" Content="Сжать файл" HorizontalAlignment="Left" Margin ="100,25,0,0" VerticalAlignment="Top" IsChecked="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" GroupName="Action" />
+        <RadioButton x:Name="Decode" Content="Разархивировать файл" HorizontalAlignment="Left" Margin ="250,25,0,0" VerticalAlignment="Top" GroupName="Action" />
+        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,30" Width="75" IsDefault="True"/>
+        <Label x:Name="DataFileLabel" Content="Путь к файлу" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DataFilePath" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Width="450"/>
+        <Button x:Name="BrowseDataFile" Content="Обзор" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,10,0" Width="75"/>
+
+        <Label x:Name="AlgoChoiceLabel" Content="Выберите алгоритм нахождения сборки слова:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,160,0,0" Width="540">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Name="HeuristicRButton" Grid.Column ="0" Content = "Эвристический алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10,10,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" cal:Message.Attach="ShowHeuristicParams"/>
+            <RadioButton Name="GeneralAggloRButton" Grid.Column ="0" Content = "Обобщенный агломеративный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10,40,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" cal:Message.Attach="ShowAgglomParams"/>
+            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10,70,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10,100,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10,130,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="10, 160,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label x:Name="CodeLabel" Grid.Column="1" Content="Выбор префиксного кода:" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="HuffmanRButton" Grid.Column ="1" Content = "Код Хаффмана" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="CodeMethod" Margin ="80,40,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+            <RadioButton Name="LevenshteinRButton" Grid.Column ="1" Content = "Код Левенштейна" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="CodeMethod" Margin ="80,70,0,0" IsEnabled="{Binding IsAlgoEnabled, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+    </Grid>
+</Window>
