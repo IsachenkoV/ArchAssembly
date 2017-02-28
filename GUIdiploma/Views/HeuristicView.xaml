@@ -18,26 +18,26 @@
             </Grid.ColumnDefinitions>
         
             <Label x:Name="CodeLabel" Grid.Column="0" Content="Выбор алгоритма для построения сборки подслов:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,80,0,0"/>
-            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,110,0,0"/>
-            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,140,0,0"/>
-            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,170,0,0"/>
-            <RadioButton Name="AutoRButton" Grid.Column ="0" Content = "Автоматический выбор" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,200,0,0"/>
+            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,80,0,0" IsChecked="{Binding IsNaive, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,110,0,0" IsChecked="{Binding IsFull, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,140,0,0" IsChecked="{Binding IsFWC, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,170,0,0" IsChecked="{Binding IsBin, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="AutoRButton" Grid.Column ="0" Content = "Автоматический выбор" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,200,0,0" IsChecked="{Binding IsAuto, UpdateSourceTrigger=PropertyChanged}"/>
 
-            <CheckBox Name="AutoSubwordLen" Grid.Column="1" Content ="Автоматически определять длины выделяемых подслов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" />
+            <CheckBox Name="AutoSubwordLen" Grid.Column="1" Content ="Автоматически определять длины выделяемых подслов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" IsChecked = "{Binding IsAutoLen, UpdateSourceTrigger= PropertyChanged}"/>
             <Label x:Name="SubwordMinLabel" Grid.Column="1" Content="Минимальная длина выделямых подслов:" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="SubwordMin" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,80,0,0" Width="50"/>
+            <TextBox x:Name="SubwordMin" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,80,0,0" Width="50" Text = "{Binding MinLen, UpdateSourceTrigger= PropertyChanged}"/>
             <Label x:Name="SubwordMaxLabel" Grid.Column="1" Content="Максимальная длина выделямых подслов:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="SubwordMax" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,110,0,0" Width="50"/>
+            <TextBox x:Name="SubwordMax" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,110,0,0" Width="50" Text = "{Binding MaxLen, UpdateSourceTrigger= PropertyChanged}"/>
 
-            <CheckBox Name="UseDicts" Grid.Column="1" Content ="Использовать построенные словари" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" />
+            <CheckBox Name="UseDicts" Grid.Column="1" Content ="Использовать построенные словари" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" IsChecked="{Binding IsUseDicts, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label x:Name="SubwordChoiceLabel" Grid.Column="1" Content="Выбор подслов:" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
-            <RadioButton Name="FirstRButton" Grid.Column ="1" Content = "Первое подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,210,0,0"/>
-            <RadioButton Name="AllRButton" Grid.Column ="1" Content = "Все подслова" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,240,0,0"/>
-            <RadioButton Name="RandWCRButton" Grid.Column ="1" Content = "Случайное подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,270,0,0"/>
+            <RadioButton Name="FirstRButton" Grid.Column ="1" Content = "Первое подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,210,0,0" IsChecked="{Binding IsFirstWord, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="AllRButton" Grid.Column ="1" Content = "Все подслова" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,240,0,0" IsChecked="{Binding IsAllWords, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="RandWCRButton" Grid.Column ="1" Content = "Случайное подслово" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Sub" Margin ="20,270,0,0" IsChecked="{Binding IsRandWord, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
-        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,34,14" Width="75" IsDefault="True" Grid.Column="1"/>
+        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,34,14" Width="75" IsDefault="True" Grid.Column="1" cal:Message.Attach="Save"/>
     </Grid>
 </Window>

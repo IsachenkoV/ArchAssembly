@@ -2,6 +2,7 @@
 
 #include "encoding.h"
 #include "IEncoder.h"
+#include "HashString.h"
 
 struct HTNode
 {
@@ -39,16 +40,19 @@ struct HTNode
 class HuffmanEncoder : IEncoder
 {
 private:
-	map < int, string > haffm_codes;
+	map < int, string > haffm_codes; // коды Хаффмана некоторых чисел
 	string code_to_haffm_codes = "";
-	string path;
-	HTNode* root;
-	HTNode* build_tree(const vector<Code>& word_concat);
-	void get_codes(HTNode* v);
-	void print_tree(HTNode* v);
+	string path; // путь к архиву
+	HTNode* root; // корень дерева Хаффмана
+	HTNode* build_tree(const vector<Code>&  word_concat); // функция для построения дерева Хаффмана
+	void get_codes(HTNode* v); // функция для построения кодов натуральных чисел
+	void print_tree(HTNode* v); // функция для печати дерева Хаффмана
+	HashString& hs;
+	vector < int > hftr;
+	int trsz;
 
 public:
 	void encode(dict d);
 	string get_code(int num);
-	HuffmanEncoder(string file_path);
+	HuffmanEncoder(string file_path, HashString& hs);
 };

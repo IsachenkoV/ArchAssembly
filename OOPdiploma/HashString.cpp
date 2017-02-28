@@ -49,9 +49,11 @@ HashString::HashString(const string& file_path)
 {
 	ifstream in;
 	in.open(file_path.c_str());
-	ofstream out;
-	out.open((file_path + ".gr").c_str());
-	in >> s;
+	char c;
+	while (in.get(c))
+	{
+		s += c;
+	}
 	initialize();
 }
 
@@ -74,7 +76,7 @@ vector<ll> HashString::get_alph_hashes()
 		if (!let[s[i]])
 		{
 			ll temp_h = get_hash(i, i);
-
+			alph.push_back(s[i]);
 			ret_val.push_back(temp_h);
 			let[s[i]] = true;
 		}
@@ -85,4 +87,20 @@ vector<ll> HashString::get_alph_hashes()
 size_t HashString::size()
 {
 	return s.size();
+}
+
+vector<char> HashString::get_alph()
+{
+	vector < char > ret_val;
+	bool let[300];
+	fill(let, let + 300, 0);
+	for (int i = 0; i < s.size(); i++)
+	{
+		if (!let[s[i]])
+		{
+			ret_val.push_back(s[i]);
+			let[s[i]] = true;
+		}
+	}
+	return ret_val;
 }

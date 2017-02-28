@@ -18,17 +18,17 @@
             </Grid.ColumnDefinitions>
 
             <Label x:Name="CodeLabel" Grid.Column="0" Content="Выбор алгоритма для построения сборки подслов:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,80,0,0"/>
-            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,110,0,0"/>
-            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,140,0,0"/>
-            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,170,0,0"/>
-            <RadioButton Name="AutoRButton" Grid.Column ="0" Content = "Автоматический выбор" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,200,0,0"/>
+            <RadioButton Name="NaiveRButton" Grid.Column ="0" Content = "Наивный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,80,0,0" IsChecked="{Binding IsNaive, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="FullRButton" Grid.Column ="0" Content = "Переборный алгоритм" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,110,0,0" IsChecked="{Binding IsFull, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="FullWCRButton" Grid.Column ="0" Content = "Переборный алгоритм с отсечениями" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,140,0,0" IsChecked="{Binding IsFWC, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="BinaryRButton" Grid.Column ="0" Content = "Агломеративная бинарная конкатенация" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,170,0,0" IsChecked="{Binding IsBin, UpdateSourceTrigger=PropertyChanged}"/>
+            <RadioButton Name="AutoRButton" Grid.Column ="0" Content = "Автоматический выбор" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="Method" Margin ="20,200,0,0" IsChecked="{Binding IsAuto, UpdateSourceTrigger=PropertyChanged}"/>
 
-            <CheckBox Name="AutoSubwordLen" Grid.Column="1" Content ="Автоматически определять длину разбиения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" />
-            <Label x:Name="SubwordMinLabel" Grid.Column="1" Content="Длина разбиения:" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="SubwordMin" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,110,0,0" Width="50"/>
+            <CheckBox Name="AutoSubwordLen" Grid.Column="1" Content ="Автоматически определять длину разбиения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" IsChecked="{Binding IsAutoLen, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label x:Name="SubwordMinLabel" Grid.Column="1" Content="Длина разбиения:" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top" />
+            <TextBox x:Name="SubwordMin" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,110,0,0" Width="50" Text ="{Binding Klen, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
-        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,34,14" Width="75" IsDefault="True" Grid.Column="1"/>
+        <Button x:Name="Launch" Content="OK" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,34,14" Width="75" IsDefault="True" Grid.Column="1" cal:Message.Attach="Save"/>
     </Grid>
 </Window>

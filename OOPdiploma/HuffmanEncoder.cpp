@@ -15,7 +15,10 @@ HTNode* HuffmanEncoder::build_tree(const vector<Code>& word_concat)
 	}
 	if (nodes.size() == 1)
 	{
-		return nodes.begin()->second;
+		HTNode* rt = new HTNode(-1);
+		rt->left_son = nodes.begin()->second;
+		rt->right_son = new HTNode(rt->left_son->c + 1);
+		return rt;
 	}
 
 	while (!nodes.empty())
@@ -50,22 +53,35 @@ void HuffmanEncoder::get_codes(HTNode* v)
 	}
 
 	code_to_haffm_codes.push_back('0');
-	get_codes(v->left_son);
+	if (v->left_son != NULL)
+		get_codes(v->left_son);
 	code_to_haffm_codes.pop_back();
 
 	code_to_haffm_codes.push_back('1');
-	get_codes(v->right_son);
+	if (v->right_son != NULL)
+		get_codes(v->right_son);
 	code_to_haffm_codes.pop_back();
 }
 
-void HuffmanEncoder::print_tree(HTNode * v)
+void HuffmanEncoder::print_tree(HTNode* v)
 {
+	if (v->c != -1)
+	{
+		hftr.push_back(1);
+		trsz++;
+		hftr.push_back(v->c + 1);
+		return;
+	}
+	print_tree(v->left_son);
+	print_tree(v->right_son);
+	hftr.push_back(0);
+	trsz++;
 }
 
 void HuffmanEncoder::encode(dict d)
 {
 	ofstream out;
-	out.open((path + ".ashf").c_str());
+	out.open((path + ".ashf").c_str(), ifstream::binary);
 
 	vector < Code > word_concat;
 	for (int i = 0; i < d.size(); i++)
@@ -82,9 +98,9 @@ void HuffmanEncoder::encode(dict d)
 	{
 		int q_log = get_log(word_concat[i].q);
 		string kemp = "";
-		for (int i = 0; i <= q_log; i++)
+		for (int j = 0; j <= q_log; j++)
 		{
-			kemp += (1 << i) & word_concat[i].r ? "1" : "0";
+			kemp += (1 << j) & word_concat[i].r ? "1" : "0";
 		}
 		reverse(kemp.begin(), kemp.end());
 		r_s.push_back(kemp);
@@ -96,7 +112,6 @@ void HuffmanEncoder::encode(dict d)
 
 	root = build_tree(word_concat);
 	get_codes(root);
-	print_tree(root);
 
 	string long_string = "";
 	int q = 0;
@@ -107,17 +122,37 @@ void HuffmanEncoder::encode(dict d)
 	}
 
 	int l_str_size = long_string.size();
+
+	out << hs.alp_size << " ";
+	if (l_str_size % 8 == 0)
+		out << 0;
+	else
+		out << 8 - l_str_size % 8;
+	out << " ";
+	
+	print_tree(root);
+	out << trsz << " ";
+	for (int i = 0; i < hftr.size(); i++)
+	{
+		out << hftr[i] << " ";
+	}
+
+	auto alph = hs.get_alph();
+	for (int i = 0; i < alph.size(); i++)
+	{
+		out.write(&alph[i], 1);
+	}
 	int cur_p = 0;
 	while (cur_p < l_str_size)
 	{
-		unsigned char c = 0;
+		char c = 0;
 		for (int i = 0; i < min(8, l_str_size - cur_p); i++)
 		{
 			int t = long_string[i + cur_p] == '0' ? 0 : 1;
 			c += (t << i);
 		}
 		cur_p += 8;
-		out << c;
+		out.write(&c, 1);
 	}
 
 	out.close();
@@ -128,6 +163,6 @@ string HuffmanEncoder::get_code(int num)
 	return haffm_codes[num];
 }
 
-HuffmanEncoder::HuffmanEncoder(string file_path) : path(file_path)
+HuffmanEncoder::HuffmanEncoder(string file_path, HashString &_hs) : path(file_path), hs(_hs)
 {
 }

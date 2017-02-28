@@ -2,5 +2,5 @@
 
 class IDecoder
 {
-
+	virtual void  decode();
 };

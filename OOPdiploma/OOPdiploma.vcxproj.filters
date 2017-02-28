@@ -60,6 +60,15 @@
     <ClCompile Include="encoding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LevenshteinDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HuffmanDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="encoding.h">
@@ -105,6 +114,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LevenshteinDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanDecoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

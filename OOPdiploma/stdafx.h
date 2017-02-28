@@ -15,6 +15,7 @@
 #include <set>
 #include <map>
 #include <fstream>
+#include <stack>
 
 #define MAXSUBWORDLEN 50
 

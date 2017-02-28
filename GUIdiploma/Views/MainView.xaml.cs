@@ -24,5 +24,10 @@ namespace GUIdiploma.Views
         {
             InitializeComponent();
         }
+
+        private void BrowseDataFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

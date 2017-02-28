@@ -1,9 +1,10 @@
 #include "LevenshteinEncoder.h"
+#include "HashString.h"
 
 void LevenshteinEncoder::encode(dict d)
 {
 	ofstream out;
-	out.open((path + ".aslv").c_str());
+	out.open((path + ".aslv").c_str(), ifstream::binary);
 
 	vector < Code > word_concat;
 	for (int i = 0; i < d.size(); i++)
@@ -20,9 +21,9 @@ void LevenshteinEncoder::encode(dict d)
 	{
 		int q_log = get_log(word_concat[i].q);
 		string kemp = "";
-		for (int i = 0; i <= q_log; i++)
+		for (int j = 0; j <= q_log; j++)
 		{
-			kemp += (1 << i) & word_concat[i].r ? "1" : "0";
+			kemp += (word_concat[i].r & (1 << j)) ? "1" : "0";
 		}
 		reverse(kemp.begin(), kemp.end());
 		r_s.push_back(kemp);
@@ -42,16 +43,29 @@ void LevenshteinEncoder::encode(dict d)
 
 	int l_str_size = long_string.size();
 	int cur_p = 0;
+
+	out << hs.alp_size << " ";
+	if (l_str_size % 8 == 0)
+		out << 0;
+	else
+		out << 8 - l_str_size % 8;
+	out << " ";
+	auto alph = hs.get_alph();
+	for (int i = 0; i < alph.size(); i++)
+	{
+		out.write(&alph[i], 1);
+	}
+
 	while (cur_p < l_str_size)
 	{
-		unsigned char c = 0;
+		char c = 0;
 		for (int i = 0; i < min(8, l_str_size - cur_p); i++)
 		{
 			int t = long_string[i + cur_p] == '0' ? 0 : 1;
 			c += (t << i);
 		}
 		cur_p += 8;
-		out << c;
+		out.write(&c, 1);
 	}
 
 	out.close();
@@ -82,7 +96,7 @@ string LevenshteinEncoder::get_code(int x)
 	return ones + "0" + res;
 }
 
-LevenshteinEncoder::LevenshteinEncoder(string file_path) : path(file_path)
+LevenshteinEncoder::LevenshteinEncoder(string file_path, HashString& _hs) : path(file_path), hs(_hs)
 {
 
 }

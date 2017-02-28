@@ -7,8 +7,10 @@ class FullWithClipAssembly : public IAssembly
 {
 private:
 	HashString& str;
+	/** Ссылка на объект, в котором хранится строка.
+	 */
 
 public:
 	FullWithClipAssembly(HashString& _hs);
-	dict get_assembly(int l, int r);
+	dict get_assembly(int l, int r); /* реализация полного перебора с отсечениями */
 };

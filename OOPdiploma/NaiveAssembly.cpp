@@ -19,7 +19,7 @@ dict NaiveAssembly::get_assembly(int l, int r)
 
 	int len = r - l + 1;
 	r++;
-	
+
 	ll cur_hash = str.get_hash(l, l);
 	int ind1 = hashindex[cur_hash];
 
@@ -28,10 +28,10 @@ dict NaiveAssembly::get_assembly(int l, int r)
 		cur_hash = str.get_hash(i, i);
 		int ind2 = hashindex[cur_hash];
 
-		int r = min(ind1, ind2);
-		int q = max(ind1, ind2);
-		bool d = ind1 == r ? false : true;
-		ans.push_back(subword(str.get_hash(l, i), i - l + 1, Code(q, r, d)));
+		int r1 = min(ind1, ind2);
+		int q1 = max(ind1, ind2);
+		bool d1 = ind1 == r1 ? false : true;
+		ans.push_back(subword(str.get_hash(l, i), i - l + 1, Code(q1, r1, d1)));
 
 		ind1 = ans.size() - 1;
 	}
